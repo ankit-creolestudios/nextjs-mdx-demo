@@ -1,26 +1,45 @@
-html,
-body {
-  padding: 0;
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
 }
+.container{
+  padding: 0 50px;
+}
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.site-page-header{
+  background-color:rgba(0, 0, 0, 0.801) !important;
+  margin-bottom: 40px !important;
+}
+.ant-page-header-heading-title{
+  color: #f3f3f3 !important;
+}
+.postcard__title{
+  color: rgba(0, 0, 0, 0.596);
+  font-weight: bold;
+}
+.postcard__title:hover{
+  color: rgb(0, 153, 255);
+}
+.tags-container-tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-link {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+  color: '#ab2321';
+  text-decoration: none;
+  margin-right: 1em;
+  border-bottom: 1px dashed '#ab2321'
+}
+
+.tag-link:hover {
+  color: #000;
+  border-bottom: 1px dashed #aaa123;
+}
+
+.tag-link:active {
+  background: '#ab2321'
 }
